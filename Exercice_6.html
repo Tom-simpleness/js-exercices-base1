@@ -5,6 +5,26 @@
         <meta charset="UTF-8">
     </head>
     <body>
+    <form name="form1">
+        <label for="age">Age : </label>
+        <input type="text" id="age" name="number1" value=""/>
+        <button onClick="controle(form1)" id="valider" name ="valider">Valider</button>
+    </form>
 
-    <body>
+    <SCRIPT LANGUAGE="javascript">
+
+        var test = "Mineur ou Majeur";
+        function controle(form1) {
+            if (document.form1.number1.value >= 18) {
+                test =  "Vous êtes majeur";
+            }
+            else {
+                test = "Vous êtes mineur";
+            }
+            alert(test);
+        }
+
+
+        </script>
+    </body>
 </html>

@@ -5,12 +5,21 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <form>
+        <form name="form1">
             <label for="premier_nombre">Premier nombre : </label>
-            <input type="text" id="premier_nombre" name="premier_nombre" value=""/>
+            <input type="text" id="premier_nombre" name="number1" value=""/>
             <label for="deuxieme_nombre">Deuxième nombre : </label>
-            <input type="text" id="deuxieme_nombre" name="deuxieme_nombre" value=""/>
-            <button id="valider" name ="valider">Valider</button>
+            <input type="text" id="deuxieme_nombre" name="number2" value=""/>
+            <button onClick="controle(form1)" id="valider" name ="valider">Valider</button>
         </form>
+
+        <SCRIPT LANGUAGE="javascript">
+
+            function controle(form1) {
+                var test = Math.trunc(document.form1.number1.value);
+                var test2 = document.form1.number2.value;
+                alert(test*test2)
+            }
+            </script>
     </body>
 </html>

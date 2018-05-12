@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
 </head>
 <body>
+<form name="form1">
+    <label for="Pointure">pointure : </label>
+    <input type="text" id="Pointure" name="number1" value=""/>
+    <label for="age">année de naissance : </label>
+    <input type="text" id="age" name="number2" value=""/>
+    <button onClick="controle(form1)" id="valider" name ="valider">Valider</button>
+</form>
+   <script>
 
+    function controle(form1){
+        var a = (( document.form1.number1.value * 2 +5)*50 );
+        var b = ( a - document.form1.number2.value );
+        var c = a + b + 1766 ;
+
+        alert(c);
+    }
+
+</script>
 </body>
 </html>

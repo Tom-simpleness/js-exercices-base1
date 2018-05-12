@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Exercice_3</title>
     <meta charset="UTF-8">
-</head>
-<body>
-<form>
-    <label for="nom">Nom : </label>
-    <input type="text" name="nom" id="nom" value=""/>
-    <label for="prenom">Prénom : </label>
-    <input type="text" name="prenom" id="prenom" value=""/>
-    <label for="ville">Ville : </label>
-    <input type="text" name="ville" id="ville"  value=""/>
-    <button  name="valider" id="valider">Valider</button>
-</form>
-</body>
+    <HEAD>
+        <SCRIPT LANGUAGE="javascript">
+            function controle(form1) {
+                var test = document.form1.input.value;
+                alert("Bonjour, " + test);
+            }
+        </SCRIPT>
+    </HEAD>
+<BODY>
+<FORM NAME="form1">
+    <label type="text" value="prénom">Prénom :</label>
+    <INPUT TYPE="text" NAME="input" VALUE=""><BR>
+    <INPUT TYPE="button" NAME="bouton" VALUE="valider" onClick="controle(form1)">
+</FORM>
 </html>

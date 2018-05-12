@@ -1,10 +1,27 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Exercice_4</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-
-    </body>
+<head>
+    <title>Exercice_3</title>
+    <meta charset="UTF-8">
+    <HEAD>
+        <SCRIPT LANGUAGE="javascript">
+            function controle(form1) {
+                var test = document.form1.nom.value;
+                var test2 = document.form1.prenom.value;
+                var test3 = document.form1.ville.value;
+                alert("Bonjour, " + test + " " + test2 + " de " + test3);
+            }
+        </SCRIPT>
+    </HEAD>
+<BODY>
+<FORM NAME="form1">
+    <label type="text" value="">Nom :</label>
+    <INPUT TYPE="text" NAME="nom" VALUE=""><BR>
+    <label type="text" value="">Prénom :</label>
+    <INPUT TYPE="text" NAME="prenom" VALUE=""><BR>
+    <label type="text" value="">ville :</label>
+    <INPUT TYPE="text" NAME="ville" VALUE=""><BR>
+    <INPUT TYPE="button" NAME="bouton" VALUE="valider" onClick="controle(form1)">
+</FORM>
 </html>
